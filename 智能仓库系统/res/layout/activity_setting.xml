@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8C7C8"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="设置中心"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#635552"/>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="30dp"
+            android:text="开机地址更新"
+            android:textSize="18sp"/>
+        
+        <Switch
+            android:id="@+id/switch_initdev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="10dp"
+            android:textOn="已开启"
+            android:textOff="已关闭"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="30dp"
+            android:text="子机恢复出厂设置"
+            android:textSize="18sp"
+            android:onClick="reset"/>
+        
+        
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="30dp"
+            android:text="子机检修"
+            android:textSize="18sp"/>
+        
+        <Switch
+            android:id="@+id/switch_checkup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="10dp"
+            android:textOn="已开启"
+            android:textOff="已关闭"/>
+        
+    </RelativeLayout>
+</LinearLayout>
